@@ -108,7 +108,7 @@ async function main() {
 
         input = input.trim();
         if (!input) return "PAT cannot be empty.";
-        if (/^[a-z\d]{52,}$/.test(input) === false) return "The input does not look like a PAT. Make sure you pasted it correctly.";
+        if (/^[a-z\d]{52,}$/i.test(input) === false) return "The input does not look like a PAT. Make sure you pasted it correctly.";
         return true;
       },
     });
